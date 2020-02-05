@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Sample Movie Ticket</string>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum molestie congue.
+        Quisque non ultrices orci. Proin cursus libero nec pulvinar ullamcorper. Vestibulum gravida,
+        felis id facilisis imperdiet, tellus ex fringilla orci, quis dictum lectus dolor sed quam.
+        Proin id placerat lectus. Praesent sollicitudin turpis at laoreet finibus. Nullam luctus, nisl ac
+        consectetur faucibus, leo leo cursus nulla, a commodo mauris odio nec ex.
+    </string>
 </resources>
