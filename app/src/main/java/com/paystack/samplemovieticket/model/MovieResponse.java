@@ -3,15 +3,17 @@ package com.paystack.samplemovieticket.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class MovieResponse {
-    public int page;
+    private int page;
     @SerializedName("total_results")
     @Expose
-    public int totalResults;
+    private int totalResults;
     @SerializedName("total_pages")
     @Expose
-    public int totalPages;
-    public Movie[] results;
+    private int totalPages;
+    private List<Movie> results;
 
     public int getPage() {
         return page;
@@ -25,7 +27,7 @@ public class MovieResponse {
         return totalPages;
     }
 
-    public Movie[] getResults() {
+    public List<Movie> getResults() {
         return results;
     }
 }

@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/iv_movie_details_image"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="250dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -45,6 +45,19 @@
             tools:text="@string/lorem" />
 
     </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="@string/buy_ticket"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal"/>
 
 
 

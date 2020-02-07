@@ -4,15 +4,18 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Movie {
-    public int id;
-    public String title;
+    private int id;
+    private String title;
     @SerializedName("poster_path")
     @Expose
-    public String posterPath;
+    private String posterPath;
+    @SerializedName("backdrop_path")
+    @Expose
+    private String backdropPath;
     @SerializedName("vote_average")
     @Expose
-    public double voteAverage;
-    public String overview;
+    private double voteAverage;
+    private String overview;
 
     public int getId() {
         return id;
@@ -24,6 +27,10 @@ public class Movie {
 
     public String getPosterPath() {
         return posterPath;
+    }
+
+    public String getBackdropPath() {
+        return backdropPath;
     }
 
     public double getVoteAverage() {

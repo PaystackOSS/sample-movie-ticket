@@ -31,6 +31,7 @@
         android:textSize="@dimen/text_semi_large"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_now_playing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
