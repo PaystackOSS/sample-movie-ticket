@@ -18,28 +18,28 @@ import java.util.List;
 
 import static com.paystack.samplemovieticket.utils.Constants.IMAGE_BASE_URL;
 
-public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.MovieAdapterViewHolder>{
+public class UpcomingAdapter extends RecyclerView.Adapter<UpcomingAdapter.UpcomingAdapterViewHolder>{
 
-    private final MovieAdapterClickListener movieAdapterClickListener;
+    private final UpcomingAdapterClickListener upcomingAdapterClickListener;
     private List<Movie> movies;
     private Context context;
 
-    public MovieListAdapter(MovieAdapterClickListener movieAdapterClickListener) {
-        this.movieAdapterClickListener = movieAdapterClickListener;
+    public UpcomingAdapter(UpcomingAdapterClickListener upcomingAdapterClickListener) {
+        this.upcomingAdapterClickListener = upcomingAdapterClickListener;
     }
 
     @NonNull
     @Override
-    public MovieAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public UpcomingAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         context = parent.getContext();
         View view = LayoutInflater.from(context)
                 .inflate(R.layout.movie_list, parent, false);
 
-        return new MovieAdapterViewHolder(view);
+        return new UpcomingAdapterViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MovieAdapterViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull UpcomingAdapterViewHolder holder, int position) {
         holder.bind(position);
     }
 
@@ -54,12 +54,12 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
         notifyDataSetChanged();
     }
 
-    class MovieAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class UpcomingAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private ImageView mMoviePoster;
         private TextView mMovieName;
 
-        MovieAdapterViewHolder(@NonNull View itemView) {
+        UpcomingAdapterViewHolder(@NonNull View itemView) {
             super(itemView);
             mMoviePoster = itemView.findViewById(R.id.iv_movie_image);
             mMovieName = itemView.findViewById(R.id.tv_movie_name);
@@ -91,12 +91,12 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
 
         @Override
         public void onClick(View v) {
-            movieAdapterClickListener.movieClicked(getAdapterPosition());
+            upcomingAdapterClickListener.movieClicked(getAdapterPosition());
 
         }
     }
 
-    public interface MovieAdapterClickListener {
+    public interface UpcomingAdapterClickListener {
         void movieClicked(int position);
     }
 }

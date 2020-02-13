@@ -6,21 +6,24 @@
     android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginRight="@dimen/margin_normal">
+    android:layout_marginRight="@dimen/margin_normal"
+    android:layout_marginEnd="@dimen/margin_normal">
 
     <ImageView
         android:id="@+id/iv_movie_image"
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="@dimen/margin_normal"
         tools:src="@drawable/split"/>
 
     <TextView
         android:id="@+id/tv_movie_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_semi_large"
+        android:textSize="@dimen/text_small"
+        android:layout_marginTop="@dimen/margin_small"
         android:textColor="@color/white"
+        android:singleLine="true"
+        android:ellipsize="end"
         tools:text="Movie Name here" />
 
 </LinearLayout>

@@ -8,4 +8,6 @@
         consectetur faucibus, leo leo cursus nulla, a commodo mauris odio nec ex.
     </string>
     <string name="buy_ticket">Buy Ticket</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming">Upcoming</string>
 </resources>

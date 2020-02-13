@@ -14,6 +14,7 @@ android {
         // Please ensure you have a valid API KEY for themoviedb.org to use this app
         // A valid key will need to be entered
         buildConfigField("String", "MOVIE_DB_API_KEY", MOVIE_DB_API_KEY)
+        buildConfigField("String", "PSTK_PUBLIC_KEY", PSTK_PUBLIC_KEY)
     }
     buildTypes {
         release {

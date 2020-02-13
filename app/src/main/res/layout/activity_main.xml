@@ -26,7 +26,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_app_name"
-        android:text="Now Playing"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/now_playing"
         android:textColor="@color/white"
         android:textSize="@dimen/text_semi_large"/>
 
@@ -37,6 +38,29 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_now_playing_label"
+        android:layout_marginTop="@dimen/margin_normal"
+        tools:listitem="@layout/movie_list"/>
+
+    <TextView
+        android:id="@+id/tv_upcoming_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_now_playing"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/upcoming"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_semi_large"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_upcoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_upcoming_label"
+        android:layout_marginTop="@dimen/margin_normal"
         tools:listitem="@layout/movie_list"/>
 
 
