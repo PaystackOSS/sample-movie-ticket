@@ -6,7 +6,6 @@
     android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginRight="@dimen/margin_normal"
     android:layout_marginEnd="@dimen/margin_normal">
 
     <ImageView

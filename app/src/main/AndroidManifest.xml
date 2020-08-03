@@ -13,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".view.SuccessActivity"></activity>
+        <activity android:name=".view.PaymentActivity" />
         <activity android:name=".view.MovieDetailsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

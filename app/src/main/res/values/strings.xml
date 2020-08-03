@@ -10,4 +10,14 @@
     <string name="buy_ticket">Buy Ticket</string>
     <string name="now_playing">Now Playing</string>
     <string name="upcoming">Upcoming</string>
+    <string name="card_number">Card Number</string>
+    <string name="dummy_card">0000 0000 0000</string>
+    <string name="card_expiry">Card Expiry</string>
+    <string name="card_cvv">CVV</string>
+    <string name="payment_prompt">Enter your card details to complete the payment</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="payment_successful">Payment Successful!</string>
+    <string name="payment_successful_icon">Payment Successful Icon</string>
+    <string name="continue_prompt">Continue</string>
 </resources>
+
