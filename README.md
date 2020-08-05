@@ -1,7 +1,8 @@
 # sample-movie-ticket
 A simple application that shows how to integrate Paystack into your Android app.
 
-![Demo](./sample_movie_ticket.gif)
+<!--![Demo](./sample_movie_ticket.gif)-->
+<img src="./sample_movie_ticket.gif" width="200" height="600"/>
 
 
 ## Project setup
