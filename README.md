@@ -2,7 +2,7 @@
 A simple application that shows how to integrate Paystack into your Android app.
 
 <!--![Demo](./sample_movie_ticket.gif)-->
-<img src="./sample_movie_ticket.gif" width="360" height="640"/>
+<!--<img src="./sample_movie_ticket.gif" width="360" height="640"/>-->
 
 
 ## Project setup
